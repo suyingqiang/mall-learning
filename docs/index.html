@@ -19,17 +19,30 @@
       coverpage: true,
       auto2top: true,
       maxLevel: 2,
-      subMaxLevel: 4,
+      subMaxLevel: 3,
       search: {
         placeholder: '搜索',
         noData: '找不到结果!',
         depth: 3
       },
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_sidebar.md': '/_sidebar.md',//防止意外回退
         '/.*/_navbar.md': '/_navbar.md'
       },
-      ga: 'UA-144208445-1'
+      ga: 'UA-144208445-1',
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer style="text-align: center">',
+            '<span><a href="http://www.beian.miit.gov.cn/" target="_blank">苏ICP备19059396号-1</a></span>',
+            '</footer>'
+          ].join('');
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ]
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

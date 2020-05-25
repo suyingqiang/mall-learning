@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # 使用Jenkins一键打包部署前端应用，就是这么6！
 
 > 上一次我们讲到了使用Jenkins一键打包部署SpringBoot应用，这一次我们来讲下如何一键打包部署前端应用，以Vue前端应用为例，这里我们使用`mall-admin-web`中的代码来进行演示。
@@ -103,7 +105,7 @@ echo '----start nginx----'
 # linux
 SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass
 # window
-set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ && npm install node-sass
+set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass&& npm install node-sass
 ```
 
 ### 有些依赖无法下载导致构建失败
@@ -120,4 +122,8 @@ npm config set registry https://registry.npmjs.org
 ## 项目地址
 
 [https://github.com/macrozheng/mall-admin-web](https://github.com/macrozheng/mall-admin-web)
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
 
